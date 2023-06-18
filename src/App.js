@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import { useState } from "react";
-import Header from "../header/Header";
-import Footer from "../footer/Footer";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
-import SearchBar from "../search/SearchBar";
+import SearchBar from "./components/search/SearchBar";
 //import MuiLink from '@mui/material/Link';
 
 const App = () => {
