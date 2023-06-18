@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/translucent-health-frontend-app/static/css/main.69430ec6.css",
+    "main.js": "/translucent-health-frontend-app/static/js/main.3f849084.js",
+    "index.html": "/translucent-health-frontend-app/index.html",
+    "main.69430ec6.css.map": "/translucent-health-frontend-app/static/css/main.69430ec6.css.map",
+    "main.3f849084.js.map": "/translucent-health-frontend-app/static/js/main.3f849084.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69430ec6.css",
+    "static/js/main.3f849084.js"
+  ]
+}
