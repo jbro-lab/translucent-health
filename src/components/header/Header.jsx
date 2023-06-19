@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
-import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import { IconButton } from '@mui/material';
+import Toolbar from "@mui/material/Toolbar";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import { IconButton } from "@mui/material";
 import { Menu, Close } from "@mui/icons-material";
-import Link from '@mui/material/Link';
+import Link from "@mui/material/Link";
 
 const Header = () => {
   const [scroll, setScroll] = useState(0);
@@ -30,11 +30,11 @@ const Header = () => {
   }, []);
 
   const style = {
-    color: scroll > 50 ? "black" : "white"
+    color: scroll > 50 ? "black" : "white",
   };
 
   const styleMain = {
-    color: scroll > 50 ? "#42a5f5" : "white"
+    color: scroll > 50 ? "#42a5f5" : "white",
   };
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -44,10 +44,17 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="sticky" style={{ backgroundColor: scroll > 50 ? "white" : "black", transition: "background-color 200ms linear", boxShadow: "none" }}>
+    <AppBar
+      position="sticky"
+      style={{
+        backgroundColor: scroll > 50 ? "white" : "black",
+        transition: "background-color 200ms linear",
+        boxShadow: "none",
+      }}
+    >
       <Toolbar>
         <Typography variant="h6" style={{ flexGrow: 1 }}>
-          <Button component={Link} href="/" style={styleMain}>
+          <Button component={Link} href="#/" style={styleMain}>
             Translucent Health
           </Button>
         </Typography>
@@ -57,27 +64,48 @@ const Header = () => {
           </IconButton>
         ) : (
           <>
-            <Button component={Link} href="/search" style={style}>
+            <Button component={Link} href="#/search" style={style}>
               Search
             </Button>
-            <Button component={Link} href="/hospitals" style={style}>
+            <Button component={Link} href="#/hospitals" style={style}>
               Hospitals
             </Button>
-            <Button component={Link} href="/about" style={style}>
+            <Button component={Link} href="#/about" style={style}>
               About Us
             </Button>
           </>
         )}
       </Toolbar>
       {menuOpen && (
-        <div style={{ backgroundColor: "white", position: "absolute", top: "56px", left: "0", right: "0", zIndex: "1" }}>
-          <Button component={Link} href="/search" style={{ color: "black", display: "block", padding: "10px 20px" }}>
+        <div
+          style={{
+            backgroundColor: "white",
+            position: "absolute",
+            top: "56px",
+            left: "0",
+            right: "0",
+            zIndex: "1",
+          }}
+        >
+          <Button
+            component={Link}
+            href="#/search"
+            style={{ color: "black", display: "block", padding: "10px 20px" }}
+          >
             Search
           </Button>
-          <Button component={Link} href="/hospitals" style={{ color: "black", display: "block", padding: "10px 20px" }}>
+          <Button
+            component={Link}
+            href="#/hospitals"
+            style={{ color: "black", display: "block", padding: "10px 20px" }}
+          >
             Hospitals
           </Button>
-          <Button component={Link} href="/about" style={{ color: "black", display: "block", padding: "10px 20px" }}>
+          <Button
+            component={Link}
+            href="#/about"
+            style={{ color: "black", display: "block", padding: "10px 20px" }}
+          >
             About Us
           </Button>
         </div>
