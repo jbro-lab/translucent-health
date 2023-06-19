@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/translucent-health-frontend-app/static/css/main.69430ec6.css",
-    "main.js": "/translucent-health-frontend-app/static/js/main.0a792d47.js",
-    "index.html": "/translucent-health-frontend-app/index.html",
-    "main.69430ec6.css.map": "/translucent-health-frontend-app/static/css/main.69430ec6.css.map",
-    "main.0a792d47.js.map": "/translucent-health-frontend-app/static/js/main.0a792d47.js.map"
+    "main.css": "/translucent-health/static/css/main.69430ec6.css",
+    "main.js": "/translucent-health/static/js/main.0a792d47.js",
+    "index.html": "/translucent-health/index.html",
+    "main.69430ec6.css.map": "/translucent-health/static/css/main.69430ec6.css.map",
+    "main.0a792d47.js.map": "/translucent-health/static/js/main.0a792d47.js.map"
   },
   "entrypoints": [
     "static/css/main.69430ec6.css",
