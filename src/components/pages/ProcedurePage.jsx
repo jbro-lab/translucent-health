@@ -79,11 +79,13 @@ const ProcedurePage = () => {
         )[0];
         setProcedureInfo(tempProcedureInfo);
         setComparableProcedures(
-          response.data?.filter(
-            (d) =>
-              d["procedure_name"] === tempProcedureInfo["procedure_name"] &&
-              d["id"] !== procedureId
-          )
+          response.data
+            ?.filter(
+              (d) =>
+                d["procedure_name"] === tempProcedureInfo["procedure_name"] &&
+                d["id"] !== procedureId
+            )
+            .sort((a, b) => a.cash_price - b.cash_price)
         );
       } catch (e) {
         console.log(e);

@@ -2,7 +2,7 @@
   "name": "translucent-health",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jbro-lab.github.io/translucent-health-frontend-app/",
+  "homepage": "https://jbro-lab.github.io/translucent-health/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
